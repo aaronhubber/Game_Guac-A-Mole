@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import Timer from "../components/Timer";
 import { Mole} from "../components/Mole";
 import { Score } from "../components/Score";
@@ -36,11 +36,10 @@ const Game = (()=>{
     const [finished, setFinished] = useState(false)
     const [score, setScore] = useState(0)
 
-
     const onWhack = ((points)=> {
-        return setScore(score + points)})
+        return setScore(score + points)
+    })
     
-
     const endGame = (()=>{
         setPlaying (false)
         setFinished(true)
@@ -51,8 +50,7 @@ const Game = (()=>{
         setPlaying (true)
         setFinished(false)
     })
-    return(
-
+    return( 
             <>
             {!playing && !finished && 
             <>
