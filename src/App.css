@@ -1,22 +1,7 @@
-
-* {
+.App{
   box-sizing: border-box;
 }
 
-.App{
-  --control: #1c6809;
-  --color: #fff;
-}
-button {
-  background-color: #1c6809;
-  color: aliceblue;
-  padding: 1rem 2rem;
-   /* rem = relative to root elemement, root element font size  */
-  border-radius: 1rem;
-  border: 4px solid aliceblue;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2rem;
-}
 body {
   background: linear-gradient(#0c5f0d 0 40%, #b1d6a3 40%);
   min-height: 100vh;
@@ -27,27 +12,6 @@ body {
   font-family: 'Gill Sans', cursive;
 }
 
-.mole {
-  background-image: url(https://res.cloudinary.com/teepublic/image/private/s--PJ4R--uE--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1552953112/production/designs/4442328_0.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  /* put the height and width of your image here */
-  height: 200px;
-  width: 200px;
-  border: none;
-}
 .mole-hole {
   overflow: hidden;
 }
-
-.Moles {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
-width: 80%;
-
-}
-
-
