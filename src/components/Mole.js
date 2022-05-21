@@ -70,4 +70,3 @@ export const Mole = ({ onWhack, points, delay, speed, pointsMin = 10 }) => {
 
     
     
-    export const Score = ({ value }) => <div>{`Score: ${value}`}</div>

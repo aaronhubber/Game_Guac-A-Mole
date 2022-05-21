@@ -1,8 +1,7 @@
 import React, {useState} from "react";
-import { render } from "@testing-library/react";
 import Timer from "../components/Timer";
 import { Mole, MOLE_SCORE } from "../components/Mole";
-import { Score } from "../components/Mole";
+import { Score } from "../components/Score";
 
 
 const TIME_LIMIT = 30000
@@ -10,7 +9,7 @@ const TIME_LIMIT = 30000
 
 
 const Moles = ({children}) => {
-    return <div>{children}</div>
+    return <div className="Moles">{children}</div>
 }
 
 
@@ -47,11 +46,11 @@ const Game = (()=>{
             <Score value={score}/>
             <Timer time={TIME_LIMIT} onEnd={endGame}/>
             <Moles>
+                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={1}/>
                 <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2}/>
-                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2}/>
-                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2}/>
-                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2}/>
-                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2}/>
+                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={1.2}/>
+                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2.2}/>
+                <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={1.8}/>
                 <Mole onWhack={onWhack} points={MOLE_SCORE} delay={0} speed={2}/>
 
             </Moles>
